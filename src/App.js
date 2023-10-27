@@ -3,7 +3,7 @@ import './App.css';
 import MyNav from './components/MyNav'
 
 import MyWelcome from './components/MyWelcome'
-
+import MyFooter from './components/MyFooter';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <main>
      <MyWelcome />
       </main>
+      <MyFooter />
       
      
      
