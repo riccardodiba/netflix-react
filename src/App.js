@@ -4,6 +4,8 @@ import MyNav from './components/MyNav'
 
 import MyWelcome from './components/MyWelcome'
 import MyFooter from './components/MyFooter';
+import Prova from "./components/Prova"
+
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <main>
      <MyWelcome />
       </main>
+      < Prova />
+   
       <MyFooter />
       
      

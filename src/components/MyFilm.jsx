@@ -4,15 +4,17 @@ import { Container,Row,Col,Spinner,Alert } from 'react-bootstrap';
 
 
 
-class MyCard extends Component {
+class MyCards extends Component {
     state = {
-    movies : [],
+        Prova :{
+    Search : [],
+        },
     isLoading : true,
     isError : false,
     }
     showFilm = () => {
         fetch (
-           ' https://www.omdbapi.com/?apikey=7d1f4fc7&s=harry%20potter'
+           ' https://www.omdbapi.com/?apikey=7d1f4fc7&s=halloween'
         )
         .then ((res) => {
             if(res.ok) {
@@ -58,7 +60,7 @@ class MyCard extends Component {
             )}
             {this.state.isError && (<Alert variant='danger' className='text-center'>Error!</Alert>
             )}   
-            {this.state.Search.map((movie) => {
+            {this.state.Prova.Search.map((movie) => {
                 return (
                     <Col key={movie.imdbID} className='mb-2 text-center px-2'>
                     <div>
@@ -72,5 +74,5 @@ class MyCard extends Component {
             )
         }
     }
-    export default MyCard
+    export default MyCards
     
